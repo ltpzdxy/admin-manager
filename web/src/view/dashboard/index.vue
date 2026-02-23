@@ -5,7 +5,7 @@
     <div class="p-4 lg:p-6">
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
         <gva-card>
-          <gva-chart :type="1" title="访问人数" />
+          <gva-chart :type="1" title="访问人数123123" />
         </gva-card>
         <gva-card>
           <gva-chart :type="2" title="新增客户" />
