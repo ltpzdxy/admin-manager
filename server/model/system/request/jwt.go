@@ -18,4 +18,6 @@ type BaseClaims struct {
 	Username    string
 	NickName    string
 	AuthorityId uint
+	//定制化店铺ID 一个用户只能属于一个店铺
+	ShopID uint `json:"shopId"`
 }

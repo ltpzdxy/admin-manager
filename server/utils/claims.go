@@ -142,6 +142,8 @@ func LoginToken(user system.Login) (token string, claims systemReq.CustomClaims,
 		NickName:    user.GetNickname(),
 		Username:    user.GetUsername(),
 		AuthorityId: user.GetAuthorityId(),
+		//定制化店铺ID 一个用户只能属于一个店铺
+		ShopID: user.GetShopID(),
 	})
 	token, err = j.CreateToken(claims)
 	return
